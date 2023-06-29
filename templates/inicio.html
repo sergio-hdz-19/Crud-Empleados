@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Pagina de Inicio Sistema empleados{% endblock title %}
+
+
+{% block content %}
+
+
+{% include 'includes/header.html' %}
+
+<!-- inicio imagen de portada -->
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    
+    <ul class="orbit-container">
+      
+      
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img style="higth: 200px;" class="orbit-image" src="{% static 'img/29485.jpg' %}" alt="Space">
+          <figcaption class="orbit-caption">
+            <a href="https://www.freepik.es/vector-gratis/banner-tipografia-horizontal-crowdfunding-ilustracion-plana-simbolos-objetivo-e-idea_6871636.htm#query=team&position=7&from_view=search&track=sph">Imagen de macrovector</a> en Freepik
+            
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- fin de imagen de portada -->
+
+<!-- bloque de bienvenida -->
+<div class="grid-x align-center">
+  <h1 class="cell large-8" style="font-size: 25px; text-align: center;">Bienvenido al Sistema de Registro de Empleados</h1>
+  <div class="cell large-7">
+    <div class="callout success">
+      <h5>Our Best Version</h5>
+      <p>Me gustaría darle la bienvenida a HHM. Nos complace que haya aceptado nuestra oferta de trabajo y haya acordado su fecha de inicio. Confío en que esta carta los encuentre mutuamente entusiasmados con su nuevo empleo en HHM.</p>
+      <!-- <a href="#">It's dangerous to go alone, take this.</a> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- fin bloque de bienvenida -->
+{% endblock content %}
